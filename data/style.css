@@ -1,0 +1,166 @@
+
+*{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    #outer_container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+    }
+
+    #container{
+        background-color: gainsboro;
+        width: 400px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        height: 324px;
+        border: 1px solid rgb(160, 153, 153);
+        
+        position: relative;
+    }
+    .scroll{
+        overflow-y: auto;
+    }
+    .noscroll{
+        overflow-y: hidden;
+    }
+
+    .coverit{
+        display: none;
+    }
+    .uncoverit{
+        display: block;
+    }
+    .cover{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(121, 121, 124, 0.452);
+    }
+    
+    .item_container{
+        background-color: white;
+        height: 40px;
+        width: 100%;
+        line-height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom: .5px whitesmoke solid;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .item_container:hover{
+        background-color: whitesmoke;
+    }
+    .item_container:last-child{
+        border: 0px;
+    }
+
+    .form_container{
+        width: 400px;  
+        background-color: aqua;
+        height: 175px;
+        padding: 20px;
+        border-radius: 10px;
+        transform: translateY(5em);
+    }
+
+    .config_form{
+        display: grid;
+        grid-template-columns: auto 70%;
+        grid-row-gap: 5px;
+    }
+    .config_form input[type="submit"] , 
+    .config_form input[type="button"]{
+        all: unset;
+        text-align: center;
+        height: 40px;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: blue;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s ease-in-out background-color;
+    }
+    .config_form input[type="submit"]:hover{
+        background-color: rgb(1, 112, 1);
+    } 
+
+    .config_form input[type="button"]:hover{
+        background-color: rgb(1, 1, 235);
+    }
+
+    .config_form input[type="button"]{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .config_form input[type="submit"]{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px; 
+        background-color: green;
+    }
+    .config_form input[type="text"] , 
+    .config_form input[type="password"]{
+        all: unset;
+        height: 35px;
+        background-color: whitesmoke;
+        padding: 0px 10px;
+        border-radius: 5px;
+    }
+
+    .wifi-icon{
+        width: 25px;
+        height: auto;
+    }
+
+    .config_form label{
+            line-height: 35px;
+    }
+
+
+    @media only screen and (max-width: 500px) {
+        #container{
+            width: 300px;
+        }
+        .form_container{
+            width: 300px;  
+        }
+        .config_form{
+            display: grid;
+            grid-template-columns: 30% 75%;
+        }
+        .config_form label{
+            line-height: 35px;
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        #container{
+            width: 250px;
+        }
+        .form_container{
+            width: 250px;  
+        }
+        .config_form{
+            display: grid;
+            grid-template-columns: 30% 75%;
+        }
+        .config_form label{
+            line-height: 35px;
+            font-size: 10px;
+        }
+    }

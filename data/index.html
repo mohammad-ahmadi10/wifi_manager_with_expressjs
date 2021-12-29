@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI MANAGER</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="outer_container">
+        <div id="container" class="scroll">
+            <div class="cover coverit">
+            </div>
+        </div>
+        <div class="form_container">
+            <form class="config_form" action="/data" method="POST">
+                <label for="ssid">SSID</label>
+                <input type="text" id="ssid" name="ssid" placeholder="Wlan-ssid" required>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder="password">
+                <input id="scanBtn" type="button" value="Scan">
+                <input type="submit" value="Connect">
+              </form> 
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+  

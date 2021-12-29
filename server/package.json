@@ -1,0 +1,20 @@
+{
+  "name": "websocketserver_arduino",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start_dev":"nodemon server.js",
+    "start_page": "lite-server index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "access-control": "^1.0.1",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
