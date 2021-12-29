@@ -19,4 +19,4 @@ and follow the Steps in [page](https://github.com/me-no-dev/arduino-esp32fs-plug
 clone this repository and connect your ESP32 with USB!
 after creating the Partion and uploading the folder data to the SPIFFS build the Project and connect to to the Acces point WIFI called ESP32 in order to configurate the ESP32 with your own
 ![wifi_manager_page](wifi_manager.png)
-![connection successfull](IP.png)
+![connection successfull](VP_IP.png)
